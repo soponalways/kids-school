@@ -148,14 +148,18 @@ nav {
 */
 
 @media screen and (max-width:600px) {
+    nav {
+        margin: 10px 1rem;
+    }
     .nav-links{
         display: none;
     }
-    .site-name-and-logo .site-name{
+    .site-name-and-logo .site-name , .contact-btn-div{
         display: none;
     }
-    .contact-btn-div{
-        display: none;
+    .site-name-and-logo .site-logo{
+        width: 2.8rem;
+        height: 2.8rem;
     }
     .menu-bar{
         display: block;
