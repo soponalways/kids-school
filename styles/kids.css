@@ -139,6 +139,94 @@ nav {
 }
 
 
+/* Main related Styles */
+
+
+/* Standard curriculum Related styles */
+.standard-curriculum{
+    background-image: url(./../assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    margin: 3.75rem 0;
+    align-items: center;
+}
+.cards{
+    max-width: 1160px;
+    display: flex;
+     gap: 1.75rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3.25rem 2.5rem;
+    gap: 2rem;
+    box-shadow: inset 0 0 1.75rem rgba(0, 0, 0, 0.05);
+    border-radius: 1.15rem;
+}
+.card-1{
+    border: 1px solid #DEF5FF;
+    background-image: linear-gradient(to top, white , white ,white ,white , #DEF5FF);
+}
+.card-2{
+    border: 1px solid #DEF5FF;
+    background-image: linear-gradient(to top, white , white ,white ,white , #FFF4DC);
+}
+.card-3{
+    border: 1px solid #DEF5FF;
+    background-image: linear-gradient(to top, white , white ,white ,white , #F2E8FF);
+}
+.card-1 a{
+    text-decoration: none;
+    color: #64C8FF;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.card-2 a{
+    text-decoration: none;
+    color: #F0AA00;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.card-3 a{
+    text-decoration: none;
+    color: #8700FF;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.card .card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.card .card-description{
+    font-size: 1rem;
+    font-weight: 500;
+     color: #808080;
+}
+.arrow-btn-group{
+    display: flex;
+    gap: 10px;
+}
+.arrow-btn-group .left , .arrow-btn-group .right{
+    background-color: orange;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.arrow-btn-group .left:hover , .arrow-btn-group .right:hover{
+    transition: 0.3s;
+    background-color: skyblue;
+}
+
 /* Responsive for mobail devices
 ********************************
 ********************************
@@ -191,6 +279,41 @@ nav {
         margin: 1.25rem 10px;
     }
 
+    /* Standard curriculum */
+    .standard-curriculum{
+        gap: 10px;
+        margin: 2.5rem 0;
+    }
+    .standard-curriculum .section-title {
+        font-size: 1.75rem;
+    }
+    .cards{
+        flex-direction: column;
+        width: 90%;
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2.25rem 1.75rem;
+        gap: 1.37rem;
+        box-shadow: inset 0 0 1.8rem rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+    }
+    .card .card-title{
+        font-size: 1rem;
+    }
+    .card .card-description{
+        font-size:  10px;
+        max-width: 200px;
+    }
+    .card a {
+        font-size: 10px;
+    }
+    .arrow-btn-group{
+        display: none;
+    }
+
 }
 
 /* Responsive for tablet devices
@@ -224,5 +347,40 @@ nav {
     }
     .banner-img{
         margin: 1.25rem 10px;
+    }
+
+    /* Standard curriculum */
+    .standard-curriculum{
+        gap: 1rem;
+        margin: 2.5rem 0;
+    }
+    .standard-curriculum .section-title {
+        font-size: 2.25rem;
+    }
+    .cards{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2.25rem 1.75rem;
+        gap: 1.37rem;
+        box-shadow: inset 0 0 1.8rem rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+    }
+    .card .card-title{
+        font-size: 1rem;
+    }
+    .card .card-description{
+        font-size:  10px;
+        max-width: 200px;
+    }
+    .card a {
+        font-size: 10px;
+    }
+    .arrow-btn-group{
+        display: none;
     }
 }
