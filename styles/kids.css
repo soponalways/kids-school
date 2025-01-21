@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
 /* <weight>: Use a value from 300 to 700 */
 
@@ -21,6 +25,9 @@
 
 
 /* Shared Styles */
+.pointer{
+    cursor: pointer;
+}
 .text-orange{
     color: #FEA301;
 }
@@ -41,7 +48,16 @@
     transition: 0.3s;
     box-shadow: 0 0 2rem skyblue;
 }
-
+.btn-primary{
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: white;
+    padding: 10px 3rem;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    width: fit-content;
+}
 /* header styles */
 
 /* nav bar related styles */
@@ -85,6 +101,33 @@ nav {
 }
 .menu-bar{
     display: none;
+}
+
+
+/* Baner section Styles */
+.banner{
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+.banner-content{
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.banner-content .section-title{
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+.banner-content .section-description{
+    font-size: 1.25rem;
+}
+.banner-img{
+    width: 100%;
 }
 
 
