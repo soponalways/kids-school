@@ -149,7 +149,8 @@ nav {
 
 @media screen and (max-width:600px) {
     nav {
-        margin: 10px 1rem;
+        padding: 12px 1rem;
+        border: 0.5px solid orange;
     }
     .nav-links{
         display: none;
