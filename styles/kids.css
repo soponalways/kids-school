@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* <weight>: Use a value from 300 to 700 */
+
+.quicksand-normal {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ /* <weight>: Use a value from 100 to 900 */
+
+.raleway-normal {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Shared Styles */
+.text-orange{
+    color: #FEA301;
+}
+.text-sky-blue{
+    color: #01ACFD;
+}
+.text-green-light{
+    color: #05D4DF;
+}
+.text-blue-dark{
+    color: #5D58EF;
+}
+.hover-shadow-orange:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 2rem orange;
+}
+.hover-shadow-sky-blue:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 2rem skyblue;
+}
+
+/* header styles */
+
+/* nav bar related styles */
+nav {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name-and-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.site-name-and-logo .site-logo{
+    max-width: 62px;
+    max-height: 62px;
+}
+.site-name-and-logo .site-name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    list-style: none;
+}
+.contact-btn-div .contact-btn{
+    background-color: orange;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 10px 3.8rem;
+}
+.menu-bar{
+    display: none;
+}
+
+
+/* Responsive for mobail devices
+********************************
+********************************
+********************************
+********************************
+********************************
+*/
+
+@media screen and (max-width:600px) {
+    .nav-links{
+        display: none;
+    }
+    .site-name-and-logo .site-name{
+        display: none;
+    }
+    .contact-btn-div{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+}
+
+/* Responsive for tablet devices
+********************************
+********************************
+********************************
+********************************
+*/
+
+@media screen and (max-width:992px) {
+    .contact-btn-div{
+        display: none;
+    }
+}
