@@ -58,6 +58,14 @@
     border-radius: 12px;
     width: fit-content;
 }
+.section-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.section-description{
+    font-weight: 500;
+    font-size: 14px;
+}
 /* header styles */
 
 /* nav bar related styles */
@@ -152,6 +160,32 @@ nav {
     .menu-bar{
         display: block;
     }
+    /* Banner styles */
+    .banner{
+        flex-direction: column-reverse;
+        margin: 8px 1rem;
+    }
+    .banner-content{
+        align-items: center;
+        text-align: center;
+    }
+    .banner-content .section-title{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .banner-content .section-description{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .banner-content .btn-primary{
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        padding: 6px 1.5rem;
+    }
+    .banner-img{
+        margin: 1.25rem 10px;
+    }
+
 }
 
 /* Responsive for tablet devices
@@ -164,5 +198,26 @@ nav {
 @media screen and (max-width:992px) {
     .contact-btn-div{
         display: none;
+    }
+
+    /* Banner related style */
+    .banner-content{
+        width: 80%;
+    }
+    .banner-content .section-title{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    .banner-content .section-description{
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .banner-content .btn-primary{
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        padding: 6px 1.5rem;
+    }
+    .banner-img{
+        margin: 1.25rem 10px;
     }
 }
