@@ -43,10 +43,16 @@
 .hover-shadow-orange:hover{
     transition: 0.3s;
     box-shadow: 0 0 2rem orange;
+    background-color: white;
+    color: black;
+    border: 1px solid orange;
 }
 .hover-shadow-sky-blue:hover{
     transition: 0.3s;
     box-shadow: 0 0 2rem skyblue;
+    background-color: white;
+    color: black;
+    border: 1px solid skyblue;
 }
 .btn-primary{
     font-weight: 700;
@@ -231,6 +237,9 @@ nav {
 .story-section{
     display: flex;
     flex-direction: column;
+    background-image: url(./../assets/bg.png), linear-gradient(to top, rgba(254, 161, 1, 0.308) , white);
+    background-size: contain;
+    background-repeat: repeat-y;
      gap: 5rem;
      padding: 3.75rem 0;
      align-items: center;
@@ -239,9 +248,106 @@ nav {
 .stories-cards{
     max-width: 1160px;
     margin: 0 auto;
-    background-color: #01ACFD;
-    height: 640px;
+    display: flex;
+    gap: 1.25rem;
 }
+.big-story-card{
+    width: 50%;
+}
+.big-story-card .story-card-img-container img , .some-story-cards .story-card-img-container img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.big-story-card , .story-card{
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+}
+
+.big-story-card .story-content {
+    padding: 0 2.3rem;
+    position: relative;
+}
+.big-story-card .story-date{
+    background-color: #3CD8E8;
+    color: white;
+    padding: 0.93rem 1.18rem;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Raleway", serif;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: calc( -1.6rem - 3.625rem);
+}
+.big-story-card .story-date:hover , .some-story-cards .story-card .story-date:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 2px 15px 1rem #3CD8E8;
+    transform: translateY(-10px);
+}
+.big-story-card .big-story-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 3.5rem 0;
+}
+.big-story-card .big-story-description{
+    font-size: 1rem;
+     font-weight: 500;
+     color: #666666;
+     line-height: 1.75rem;
+}
+
+.some-story-cards{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: 1.25rem;
+}
+.some-story-cards .story-card .story-content{
+    margin: 2.37rem 2.37rem 2.37rem 2.37rem;
+    position: relative;
+}
+.some-story-cards .story-card .story-date{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Raleway" serif;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.875rem;
+    border-radius: 3rem;
+    position: absolute;
+    top: calc( -1.6rem - 2.25rem);
+    cursor: pointer;
+    transition: 200ms;
+
+}
+.some-story-cards .story-card .story-content p {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+}
+
+.some-story-cards .story-card-1 .story-date ,
+.some-story-cards .story-card-3 .story-date,
+.some-story-cards .story-card-4 .story-date{
+    background-color: #95B226;
+}
+.some-story-cards .story-card-2 .story-date{
+    background-color: #5D58F0;
+}
+.some-story-cards .story-card .story-date:hover{
+    box-shadow: 2px 15px 1rem #95B226;
+
+}
+.some-story-cards .story-card-2 .story-date:hover{
+    box-shadow: 2px 15px 1rem #5D58F0;
+
+}
+
+
+
 
 /* Responsive for mobail devices
 ********************************
@@ -330,6 +436,28 @@ nav {
         display: none;
     }
 
+
+    /* Our Stories Sectioon Styles */
+    .big-story-card {
+        display: none;
+    }
+    .some-story-cards .story-card .story-content{
+        margin: 1.37rem;
+        position: relative;
+    }
+    .some-story-cards .story-card .story-date{
+        font-size: 10px;
+        color: white;
+        padding: 0.375rem 0.687rem;
+        border-radius: 1.75rem;
+        top: calc( -1.3rem - 1rem);
+        cursor: pointer;
+    
+    }
+    .some-story-cards .story-card .story-content p {
+        font-size: 0.625rem;
+        line-height: 1.06rem;
+    }
 }
 
 /* Responsive for tablet devices
@@ -398,5 +526,34 @@ nav {
     }
     .arrow-btn-group{
         display: none;
+    }
+
+
+      /* Our Stories Sectioon Styles */
+      .big-story-card {
+        display: none;
+    }
+    .some-story-cards{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        gap: 1.25rem;
+    }
+
+    .some-story-cards .story-card .story-content{
+        margin: 1.37rem;
+        position: relative;
+    }
+    .some-story-cards .story-card .story-date{
+        font-size: 10px;
+        color: white;
+        padding: 0.375rem 0.687rem;
+        border-radius: 1.75rem;
+        top: calc( -1.3rem - 1rem);
+        cursor: pointer;
+    
+    }
+    .some-story-cards .story-card .story-content p {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
     }
 }
